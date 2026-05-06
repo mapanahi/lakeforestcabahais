@@ -180,32 +180,18 @@
             
             <!-- Contact Form Placeholder -->
             <div class="p-10 md:w-3/5">
-                <form onsubmit="event.preventDefault(); alert('To make this form work, you can hook it up to a service like Formspree.io!');" class="space-y-6">
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-2">Name</label>
-                        <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-bahai-blue focus:border-bahai-blue" placeholder="Your name">
-                    </div>
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
-                        <input type="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-bahai-blue focus:border-bahai-blue" placeholder="you@example.com">
-                    </div>
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-2">How can we help?</label>
-                        <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-bahai-blue focus:border-bahai-blue">
-                            <option>I'd like to learn more about the Faith</option>
-                            <option>I'm interested in local activities</option>
-                            <option>I'm a Bahá'í moving to the area</option>
-                            <option>Other</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
-                        <textarea rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-bahai-blue focus:border-bahai-blue" placeholder="Your message..."></textarea>
-                    </div>
-                    <button type="submit" class="w-full bg-bahai-blue text-white font-bold py-3 px-4 rounded-lg hover:bg-blue-800 transition shadow-md">
-                        Send Message
-                    </button>
-                </form>
+                <!-- Google Form Embed -->
+                <iframe 
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSdRd0ZztfMYYXrMn-39SezPWwP8UirCPEd0Vi9572754UHbjQ/viewform?embedded=true" 
+                    width="100%" 
+                    height="985" 
+                    frameborder="0" 
+                    marginheight="0" 
+                    marginwidth="0"
+                    class="rounded-lg bg-gray-50 border border-gray-200"
+                >
+                    Loading form...
+                </iframe>
             </div>
         </div>
     </section>
