@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bahá'ís of Lake Forest, California</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bahai: {
+                            blue: '#1E3A8A', // Deep dignified blue
+                            gold: '#D97706', // Warm gold accent
+                            light: '#F8FAFC',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Open Sans', 'sans-serif'],
+                        serif: ['Merriweather', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .hero-bg {
+            background: linear-gradient(rgba(30, 58, 138, 0.8), rgba(30, 58, 138, 0.8)), url('https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-bahai-light antialiased flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="#" class="text-2xl font-serif font-bold text-bahai-blue flex items-center gap-2">
+                        <!-- Simple 9-Pointed Star SVG Placeholder -->
+                        <svg class="w-8 h-8 text-bahai-gold" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2L14.5 9.5H22L16 14L18.5 21.5L12 17L5.5 21.5L8 14L2 9.5H9.5L12 2Z" />
+                        </svg>
+                        Bahá'ís of Lake Forest
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-gray-600 hover:text-bahai-blue font-semibold transition">Our Faith</a>
+                    <a href="#activities" class="text-gray-600 hover:text-bahai-blue font-semibold transition">Community Building</a>
+                    <a href="#contact" class="bg-bahai-blue text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-800 transition shadow-md">Contact Us</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="text-gray-600 hover:text-bahai-blue focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <a href="#about" class="block px-4 py-3 text-gray-600 hover:bg-gray-50">Our Faith</a>
+            <a href="#activities" class="block px-4 py-3 text-gray-600 hover:bg-gray-50">Community Building</a>
+            <a href="#contact" class="block px-4 py-3 text-bahai-blue font-bold hover:bg-gray-50">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-bg text-white py-32 px-4 relative flex-grow flex items-center justify-center text-center">
+        <div class="max-w-4xl mx-auto z-10">
+            <h1 class="text-4xl md:text-6xl font-serif font-bold mb-6 leading-tight">Welcome to the Bahá'í Community of Lake Forest</h1>
+            <p class="text-xl md:text-2xl font-light mb-10 italic">"So powerful is the light of unity that it can illuminate the whole earth." <br>— Bahá'u'lláh</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#activities" class="bg-bahai-gold text-white px-8 py-3 rounded-full font-bold hover:bg-yellow-600 transition shadow-lg text-lg">Join an Activity</a>
+                <a href="#about" class="bg-white text-bahai-blue px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition shadow-lg text-lg">Learn More</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-bahai-blue mb-6">The Oneness of Humanity</h2>
+                <p class="text-lg text-gray-700 mb-4 leading-relaxed">
+                    We are the Bahá'ís of Lake Forest, California — members of the worldwide Bahá'í Faith. We invite you to explore the teachings of our Faith and join us in creating a better world, one heart, one family, one neighborhood at a time.
+                </p>
+                <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                    At the center of the Bahá'í Faith is the figure of Bahá'u'lláh. The central theme of His message is that humanity is one single race and that the day has come for its unification in one global society. We believe in one Creator, the essential oneness of all major world religions, and the elimination of all forms of prejudice.
+                </p>
+                <a href="https://www.bahai.org/beliefs" target="_blank" class="inline-flex items-center text-bahai-blue font-bold hover:text-bahai-gold transition">
+                    Explore Bahá'í Beliefs on Bahai.org 
+                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
+            </div>
+            <div class="relative">
+                <div class="aspect-w-4 aspect-h-3 rounded-2xl overflow-hidden shadow-xl">
+                    <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Diverse community gathering" class="object-cover w-full h-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section id="activities" class="py-20 bg-gray-50 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-bahai-blue mb-4">Building Community Together</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">All over Orange County and across the globe, Bahá'ís are engaged in a process of community building open to all. You are warmly invited to participate.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Activity 1 -->
+                <div class="bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition transform hover:-translate-y-1">
+                    <div class="w-14 h-14 bg-blue-100 text-bahai-blue rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Children's Classes</h3>
+                    <p class="text-gray-600">Classes that awaken the spiritual capacities of children, focusing on virtues like truthfulness, kindness, and justice.</p>
+                </div>
+
+                <!-- Activity 2 -->
+                <div class="bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition transform hover:-translate-y-1">
+                    <div class="w-14 h-14 bg-green-100 text-green-700 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Junior Youth</h3>
+                    <p class="text-gray-600">Groups for ages 11-14 that empower young people to navigate a crucial stage of life and channel their energy into service.</p>
+                </div>
+
+                <!-- Activity 3 -->
+                <div class="bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition transform hover:-translate-y-1">
+                    <div class="w-14 h-14 bg-yellow-100 text-bahai-gold rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Study Circles</h3>
+                    <p class="text-gray-600">Small groups exploring Bahá'í writings in a participatory manner, building capacity to serve the community.</p>
+                </div>
+
+                <!-- Activity 4 -->
+                <div class="bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition transform hover:-translate-y-1">
+                    <div class="w-14 h-14 bg-purple-100 text-purple-700 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Devotionals</h3>
+                    <p class="text-gray-600">Gatherings for collective prayer and reflection, open to all faiths, fostering a spirit of love and fellowship.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Get Involved Section -->
+    <section id="contact" class="py-20 px-4">
+        <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col md:flex-row">
+            <div class="bg-bahai-blue text-white p-10 md:w-2/5 flex flex-col justify-center">
+                <h2 class="text-3xl font-serif font-bold mb-6">Connect With Us</h2>
+                <p class="mb-8 font-light text-blue-100">Whether you'd like to join a devotional, enroll a child in classes, or simply ask a question, we'd love to hear from you.</p>
+                
+                <div class="space-y-4">
+                    <div class="flex items-center">
+                        <svg class="w-6 h-6 mr-4 text-bahai-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                        <span>1-800-22-UNITE <br><span class="text-sm text-blue-200">(National Information Line)</span></span>
+                    </div>
+                    <div class="flex items-center">
+                        <svg class="w-6 h-6 mr-4 text-bahai-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        <span>Lake Forest, CA</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contact Form Placeholder -->
+            <div class="p-10 md:w-3/5">
+                <form onsubmit="event.preventDefault(); alert('In a live Google Site, you can replace this form area with a Google Form integration!');" class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                        <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-bahai-blue focus:border-bahai-blue" placeholder="Your name">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                        <input type="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-bahai-blue focus:border-bahai-blue" placeholder="you@example.com">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">How can we help?</label>
+                        <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-bahai-blue focus:border-bahai-blue">
+                            <option>I'd like to learn more about the Faith</option>
+                            <option>I'm interested in local activities</option>
+                            <option>I'm a Bahá'í moving to the area</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                        <textarea rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-bahai-blue focus:border-bahai-blue" placeholder="Your message..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-bahai-blue text-white font-bold py-3 px-4 rounded-lg hover:bg-blue-800 transition shadow-md">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-300 py-12 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-8 text-center md:text-left items-start">
+            <div>
+                <h4 class="text-white text-lg font-serif font-bold mb-4 flex items-center justify-center md:justify-start gap-2">
+                    <svg class="w-5 h-5 text-bahai-gold" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2L14.5 9.5H22L16 14L18.5 21.5L12 17L5.5 21.5L8 14L2 9.5H9.5L12 2Z" />
+                    </svg>
+                    Bahá'ís of Lake Forest
+                </h4>
+                <p class="text-sm leading-relaxed mb-4">Dedicated to promoting the principles of unity, peace, and justice in the world and in our local community of Lake Forest, California.</p>
+            </div>
+            <div class="flex flex-col space-y-2">
+                <h4 class="text-white text-lg font-bold mb-2">Official Links</h4>
+                <a href="https://www.bahai.org/" target="_blank" class="hover:text-white transition">The Bahá'í Faith (Global)</a>
+                <a href="https://www.bahai.us/" target="_blank" class="hover:text-white transition">Bahá'ís of the United States</a>
+                <a href="https://news.bahai.org/" target="_blank" class="hover:text-white transition">Bahá'í World News Service</a>
+                <a href="https://www.bahai.org/library/" target="_blank" class="hover:text-white transition">Bahá'í Reference Library</a>
+            </div>
+            <div>
+                <h4 class="text-white text-lg font-bold mb-4">Contact Info</h4>
+                <p class="mb-2">Lake Forest, CA 92630</p>
+                <p>National Info Line: <br><strong class="text-white">1-800-22-UNITE</strong></p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 mt-12 pt-8 border-t border-slate-700 text-sm text-center">
+            <p>&copy; 2026 Bahá'í Community of Lake Forest, California. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
